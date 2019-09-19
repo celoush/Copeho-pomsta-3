@@ -1,0 +1,121 @@
+#include "celo\font.hpp"
+
+onLoadIntroTime = false;
+onLoadMissionTime = false;
+OnLoadMission = $STR_CELO_LOAD_TEXT;
+OnLoadMissionIntro = $STR_CELO_LOAD_TEXT;
+
+author= $STR_CELO_title1;
+OnLoadName = $STR_CELO_MissionName;
+
+showCompass=1;
+showGPS=0;
+showMap=0;
+showNotepad=1;
+showWatch=1;
+briefing = 1;
+debriefing=0;
+
+loadScreen = "images\copes_revenge3.paa";
+
+doneKeys[] = {"klic_celo_copes_revenge3"};
+
+
+class CfgIdentities
+{
+ 	
+ 	class WillCope
+	{
+		face = "WhiteHead_10";
+		glasses = "None";
+		name = "William Cope";
+		nameSound = "Adams";
+		pitch = 1.0;
+		speaker = "Male01ENG";
+	};
+
+
+};
+
+
+class CfgMusic
+{
+
+	tracks[]= {
+		CELO_Cope_Track_1,
+		CELO_Cope_Track_2,
+		CELO_Cope_Track_3,
+		CELO_Cope_Track_4,
+		CELO_Cope_Track_5,
+		CELO_Cope_Track_6,
+		CELO_Cope_Track_7,
+		CELO_Cope_Track_Intro,
+		CELO_Cope_Track_Outro,
+		CELO_Cope_Track_Mezi4
+	};
+
+	class CELO_Cope_Track_1 {
+		name="cope_track_1";
+		sound[]={\music\track1.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_2 {
+		name="cope_track_2";
+		sound[]={\music\track2.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_3 {
+		name="cope_track_3";
+		sound[]={\music\track3.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_4 {
+		name="cope_track_4";
+		sound[]={\music\track4.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_5 {
+		name="cope_track_5";
+		sound[]={\music\track5.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_6 {
+		name="cope_track_6";
+		sound[]={\music\track6.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_7 {
+		name="cope_track_7";
+		sound[]={\music\track7.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_Intro {
+		name="cope_track_intro";
+		sound[]={\music\intro.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_Outro {
+		name="cope_track_outro";
+		sound[]={\music\outro.ogg, db+0, 1.0};
+	};
+
+	class CELO_Cope_Track_Mezi4 {
+		name="cope_track_mezi4";
+		sound[]={\music\mezi4.ogg, db+0, 1.0};
+	};
+
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = $STR_CELO_DEBR_title;
+		subtitle = $STR_CELO_DEBR_title;
+		description = $STR_CELO_DEBR_description;
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
